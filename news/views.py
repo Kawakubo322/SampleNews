@@ -14,3 +14,11 @@ class IndexView(generic.TemplateView):
         context['top_headlines'] = newsapi.get_top_headlines(country='jp')
         # print(context['top_headlines'])
         return context
+
+
+class DetailView(generic.TemplateView):
+    template_name = "news/detail.html"
+
+    def get_context_data(self, **kwargs):
+        context = {}
+        return context
