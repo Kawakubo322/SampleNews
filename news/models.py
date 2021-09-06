@@ -7,3 +7,9 @@ from newsapi import NewsApiClient
 class User(models.Model):
     name = models.CharField(max_length=32)
     email = models.EmailField()
+
+
+class News(models.Model):
+    image = models.ImageField()
+    title = models.CharField(max_length=128)
+    body = models.TextField()

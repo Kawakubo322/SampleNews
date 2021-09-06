@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'newsapi',
 
     'news',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
